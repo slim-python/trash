@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="vue.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for vueDDDDDD</title>
+</head>
+
+<body>
+
+    <div id="app" v-on:keyup.13="but">
+
+
+        <p id="result">{{ message }}</p>
+        <input v-model="message">
+        <button v-on:click="but">submit</button>
+
+
+
+    </div>
+
+
+
+    <script>
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: ''
+            },
+            methods: {
+                but: function () {
+                    this.message= Number(this.message)*2
+                }
+                
+            }
+        })
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
